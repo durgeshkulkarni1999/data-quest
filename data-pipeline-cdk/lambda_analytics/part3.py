@@ -11,7 +11,7 @@ def run_analytics(bucket_name: str, series_key: str, pop_key: str):
 
     s3_path = f"s3://{bucket_name}"
 
-    # --- Load BCL series CSV via Wrangler ---
+    #Load BCL series CSV
     df_series = pd.s3.read_csv(f"{s3_path}/{series_key}", sep="\t")
 
     # --- Load population JSON via Wrangler ---
