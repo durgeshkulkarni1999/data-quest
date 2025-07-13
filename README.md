@@ -103,15 +103,15 @@ Used **AWS CDK** to automate the entire pipeline:
 - `lambda_analytics/handler.py`: Runs all analytics queries
 - `pipeline_stack.py`: Orchestrates Lambdas, S3, SQS, IAM, and EventBridge
 
-🔹 **Source code**: [`/cdk/`](./data-pipeline-cdk/)
+🔹 **Source code**: [`/data-pipeline-cdk/`](./data-pipeline-cdk/)
 
 ---
 
 ## Running the AWS CDK IaC
 
-1. Navigate to the `cdk` folder:
+1. Navigate to the `data-pipeline-cdk` folder:
    ```bash
-   cd cdk
+   cd data-pipeline-cdk
 
 2. Install dependencies:
    ```bash
