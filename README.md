@@ -1,6 +1,6 @@
-# Data Quest Assessment 
+# Data Quest
 
-- This is the architecture diagram that I have buil according to assessment requirements
+- This is the architecture diagram that I have built according to quest requirements
 
 ![Data Quest Diagram](Architecture.png)
 
@@ -8,7 +8,7 @@
 
 Tech stack that I have used in this project is:
 1. Python (Pandas,Numpy)
-2. LamBda
+2. Lambda
 3. SQS
 4. S3
 5. AWS Cloudformation and CDK
@@ -103,7 +103,7 @@ Used **AWS CDK** to automate the entire pipeline:
 - `lambda_analytics/handler.py`: Runs all analytics queries
 - `pipeline_stack.py`: Orchestrates Lambdas, S3, SQS, IAM, and EventBridge
 
-🔹 **Source code**: [`/cdk/`](./cdk/)
+🔹 **Source code**: [`/cdk/`](./data-pipeline-cdk/)
 
 ---
 
@@ -114,16 +114,18 @@ Used **AWS CDK** to automate the entire pipeline:
    cd cdk
 
 2. Install dependencies:
-
-npm install -g aws-cdk
-pip install -r lambda_ingest/requirements.txt -t lambda_ingest/
-pip install -r lambda_analytics/requirements.txt -t lambda_analytics/
+   ```bash
+   npm install -g aws-cdk
+   pip install -r lambda_ingest/requirements.txt -t lambda_ingest/
+   pip install -r lambda_analytics/requirements.txt -t lambda_analytics/
 
 3. Bootstrap the environment:
-cdk bootstrap
+   ```bash
+   cdk bootstrap
 
 4. Deploy the CDK stack:
-cdk deploy
+   ```bash
+   cdk deploy
 
 5. Trigger ingestion:
 
